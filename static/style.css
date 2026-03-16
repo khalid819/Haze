@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Orbitron:wght@400..900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
 :root {
   --bgc: hsl(0, 0%, 0%);
   --ngc: hsla(0, 0%, 0%, 0.521);
@@ -13,7 +13,7 @@
   --btnsm: hsl(77.32deg 86.59% 67.84%);
   --c: white;
   --bsc:hsl(0, 0%, 17%);
-  --sc: hsl(0, 0%, 39%);
+  --sc: hsl(0, 1%, 54%);
   --secbtn: hsl(0, 3%, 21%);
   --hf: "Orbitron", sans-serif;
   --scf: "Zain", sans-serif;
@@ -38,11 +38,10 @@
 
 .nav-list {
   width: 100%;
-  height: 60px;
-  background-color: var(--ngc);
-  backdrop-filter:blur(20px);
+  height: 10vh;
   display: flex;
   align-items: center;
+  margin: auto;
 
 }
 
@@ -53,11 +52,11 @@
 }
 
 .m {
-  font-size: 40px;
-  font-family: var(--hf);
-  color: var(--c);
-  margin-right: auto;
-}
+    width: 10%;
+    height: 10%;
+    margin-right: auto;
+    bottom: 4vh;
+  }
 
 .nav-list li a {
   text-decoration: none;
@@ -70,142 +69,24 @@
 
 .nav-list li a:hover {
   text-decoration: none;
-  color:var(--c);
+  color:white;
   transform: translateY(-2px);
 }
-
-.background {
-  background-color: var(--bgc);
-  background-size: cover;
-  background-blend-mode: darken;
-}
-
-.first {
-  display: flex;
-  justify-content: center;
-  margin-top: 4%;
-  color: var(--c);
-  font-family: var(--scf);
-  margin-left: 7%;
-  position: relative;
-}
-
-.head {
-  font-size: 66px;
-  width: 30%;
-}
-
-.para {
-  margin-left: 7%;
-  width: 26%;
-  color: var(--sc);
-  margin-top: 2.6%;
-}
-
-.btn {
-  border-radius: 30px;
-  display: flex;
-  height: 30px;
-  width: 70px;
-  padding: 5px 17px 5px 17px; 
-  text-decoration: none;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 117px;
-  right: 322px;
-  background: linear-gradient(to right, var(--btnsm), var(--btn));
-  color: var(--bgc);
-  cursor: pointer;
-  z-index:1;
-}
-
-.img {
-  position: relative;
-  left: 550px;
-  display: inline;
-  bottom: 100px;
-}
-
-.crd {
-  color: var(--bgc);
-  font-family: var(--scf);
-  width: 210px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 27px;
-  position: relative;
-  border-radius: 20px;
-}
-
-.container {
-  bottom: 250px;
-  display: flex;
-}
-
-.card {
-  left: 50px;
-  rotate: -15deg;
-  z-index: 1;
-  background: linear-gradient(to top right, var(--c1), var(--c1sm));
-  bottom: 30px
-}
-
-.card2 {
-  rotate: -2deg;
-  z-index: 2;
-  background: linear-gradient(to top right, var(--c2sm), var(--c2));
-  bottom: 7px;
-  box-shadow: 0px -10px 999px rgba(255, 255, 115, 0.685);
-}
-
-.card3 {
-  right: 30px;
-  rotate: 12deg;
-  z-index: 3;
-  background: linear-gradient(to top right, var(--c3), var(--c3sm));
-  top: 50px
-}
-
-.l {
-  background-color: var(--bsc);
-  display: flex;
-  border-radius: 30px;
-  height: 25px;
-  padding: 5px 17px 5px 17px;
-  text-decoration: none;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.paraq{
-  color: var(--c);
-  font-family: var(--scf);
-  display: flex;
- justify-content: center;
- font-size: xx-large;
-}
-.paraw{
-  font-family: var(--scf);
-  color: var(--c);
-  font-size: larger;
-  padding: 20px;
-}
-.bgc{
-  background: url(https://cdn.pixabay.com/photo/2016/05/11/13/20/keyboard-1385706_1280.jpg) rgba(0, 0, 0, 0.822);
-  background-size: cover;
-  background-blend-mode: darken;
-  height: 100vh;
-}
-.pa{
-  color: var(--c3);
-}
-.par{
-  border-radius: 20px;
-  background-color: rgb(147, 147, 255);
-  text-decoration: none;
-}
-.par:hover{
-  color: var(--bgc);
-}
+ .l{
+  padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+  background: rgb(46, 55, 70);
+  color: black;
+  border-radius: 40px;
+ }
+ body{
+  background: #ffff;
+ }
+ 
+ .hero{
+  width: 97vw;
+  height: 98vh;
+  margin: auto;
+  background: #004737;
+  top: -10vh;
+  border-radius: 10px 10px 10px 10px;
+ }

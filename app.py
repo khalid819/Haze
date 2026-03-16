@@ -16,5 +16,5 @@ def blog():
     return render_template("blog.html")
 @app.errorhandler(404)
 def lost(error):
-    return render_template("lost.html")
-app.run(debug=True) 
+    return render_template("index.html")
+app.run(debug=True,port=3000) 
