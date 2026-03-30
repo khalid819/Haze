@@ -1,13 +1,28 @@
-burger= document.querySelector('.burger')
-navbar= document.querySelector('.navbar')
-navlist= document.querySelector('.nav-list')
-ro= document.querySelector('.line')
-rt= document.querySelector('.p')
-r= document.querySelector('.q')
-burger.addEventListener('click',()=>{
-    navbar.classList.toggle('hclass');
-    navlist.classList.toggle('vclass');
-    ro.classList.toggle('rt');
-    rt.classList.toggle('r');
-    r.classList.toggle('ro');
-})
+let lastScroll = 0;
+const navbar = document.getElementById("navbar");
+const hero = document.getElementById("hero");
+
+navbar.style.display="none"
+window.addEventListener("scroll", () => {
+  let currentScroll = window.pageYOffset;
+  let heroHeight = hero.offsetHeight;
+    
+  // 👉 Hero section logic
+  if (currentScroll< heroHeight) {
+    navbar.style.display="flex"
+    navbar.classList.add("hero-hide");
+    navbar.classList.remove("dark"); // light color
+  } else {
+    navbar.classList.remove("hero-hide");
+    navbar.classList.add("dark"); // dark mode
+
+    // 👉 Scroll behavior
+    if (currentScroll > lastScroll) {
+      navbar.classList.add("hide");
+    } else {
+      navbar.classList.remove("hide");
+    }
+  }
+
+  lastScroll = currentScroll;
+});
